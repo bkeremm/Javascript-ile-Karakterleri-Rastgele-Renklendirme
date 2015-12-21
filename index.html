@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Js</title>
+	<style type="text/css">
+		span 
+		{
+		    color: red;
+		    font-weight: bold;
+		    font-size: 20px;
+		}
+	</style>
+	<script src="http://localhost/nu-ticket/assets/js/libs/jquery-1.10.1.min.js"></script>
+<script type="text/javascript">
+$( document ).ready(function() {
+	$( 'span' ).each(function( index ) {
+	  var originalText = $( this ).text();
+	  var newText = '';
+	  var color = '';
+	  for( var i = 0; i < originalText.length; i++)
+	  {
+	  color = '#'+Math.floor(Math.random()*16777215).toString(16);
+	      if (i % 2 === 0)
+	        newText += '<span style="color: '+color+'">' + originalText.charAt(i) + '</span>';  
+	      else
+	        newText += originalText.charAt(i);
+	  }
+	  $( this ).html(newText);
+	});
+});
+</script>
+</head>
+<body>
+<span>write less do more.</span>
+<br/>
+<span>Kerem Bahçıvan</span>
+</body>
+</html>
