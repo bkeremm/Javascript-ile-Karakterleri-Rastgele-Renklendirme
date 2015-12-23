@@ -1,2 +1,2 @@
-# Javascript ile Karakterleri Rastgele Renklendirme
+# Random Character Coloring
 
